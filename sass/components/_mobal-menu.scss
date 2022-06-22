@@ -1,17 +1,68 @@
 .mobile-menu-conteiner {
-  background-color: aqua;
+  background-color: white;
   text-align: center;
   padding: 20px;
 
-  &:is-open {
-    display: block;
-  }
-
   @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
+    // position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+
+    &:is-open {
+      display: block;
+    }
   }
+}
+
+.button-mobal {
+  //   position: absolute;
+  //   top: 22;
+  //   right: 16px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-mobal .icon-close {
+  display: none;
+}
+
+// .button-mobal.is-open .icon-close {
+//   display: block;
+// }
+
+// .button-mobal.is-open .icon-menu {
+//   display: none;
+// }
+
+.modal-soc__list {
+  display: flex;
+  @extend %list;
+}
+
+.modal-soc__item {
+  padding: 0 5px;
+}
+
+.modal-soc__item--padding {
+  padding-left: 0;
+}
+
+.modal-soc__item + .modal-soc__item {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-soc__link {
+  color: $buttonColor;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }

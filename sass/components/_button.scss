@@ -60,29 +60,3 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-
-.button-mobal {
-  position: absolute;
-  top: 22;
-  right: 16px;
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.button-mobal .icon-close {
-  display: none;
-}
-
-.button-mobal.is-open .icon-close {
-  display: block;
-}
-
-.button-mobal.is-open .icon-menu {
-  display: none;
-}

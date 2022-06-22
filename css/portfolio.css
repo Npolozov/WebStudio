@@ -25,7 +25,7 @@
   padding-bottom: 94px;
 }
 
-.list-projects, .social__list, .contact-footer, .site-nav, .contact__list, .buttons-list {
+.modal-soc__list, .list-projects, .social__list, .contact-footer, .site-nav, .contact__list, .buttons-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -136,33 +136,6 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-mobal {
-  position: absolute;
-  top: 22;
-  right: 16px;
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-}
-@media screen and (min-width: 768px) {
-  .button-mobal {
-    display: none;
-  }
-}
-
-.button-mobal .icon-close {
-  display: none;
-}
-
-.button-mobal.is-open .icon-close {
-  display: block;
-}
-
-.button-mobal.is-open .icon-menu {
-  display: none;
-}
-
 .title {
   color: #212121;
   margin-bottom: 50px;
@@ -221,6 +194,14 @@ img {
   fill: currentColor;
 }
 
+.contact__icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contact-footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -243,12 +224,6 @@ header {
   position: relative;
 }
 
-.main-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .navigator {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,10 +237,10 @@ header {
 }
 
 .site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 93px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .site-nav__link {
@@ -407,7 +382,7 @@ header {
 }
 @media screen and (max-width: 767px) {
   .form_input {
-    min-width: 450px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -759,19 +734,60 @@ body {
 }
 
 .mobile-menu-conteiner {
-  background-color: aqua;
+  background-color: white;
   text-align: center;
   padding: 20px;
 }
-.mobile-menu-conteiner:is-open {
-  display: block;
-}
 @media screen and (max-width: 767px) {
   .mobile-menu-conteiner {
-    display: none;
-    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
   }
+  .mobile-menu-conteiner:is-open {
+    display: block;
+  }
+}
+
+.button-mobal {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .button-mobal {
+    display: none;
+  }
+}
+
+.button-mobal .icon-close {
+  display: none;
+}
+
+.modal-soc__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-soc__item {
+  padding: 0 5px;
+}
+
+.modal-soc__item--padding {
+  padding-left: 0;
+}
+
+.modal-soc__item + .modal-soc__item {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-soc__link {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }/*# sourceMappingURL=portfolio.css.map */
