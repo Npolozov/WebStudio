@@ -1100,7 +1100,7 @@ body {
 .mobile-menu-conteiner {
   background-color: white;
   text-align: center;
-  padding: 20px;
+  padding: 48px 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1137,8 +1137,8 @@ body {
 
 .button-mobal-close {
   position: absolute;
-  top: 22;
-  right: 16px;
+  top: 21px;
+  right: 25px;
   border: none;
   background-color: transparent;
   margin: 0;
