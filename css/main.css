@@ -21,8 +21,8 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .modal-soc__list, .mobal-contact__list, .mobal-site-nav, .team__list, .feature__list, .company__list, .about__list, .social__list, .contact-footer, .site-nav, .contact__list, .buttons-list {
@@ -638,12 +638,18 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  min-width: 320px;
 }
 
 .about {
   padding-top: 0;
 }
 @media screen and (max-width: 768px) {
+  .about {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
   .about {
     display: none;
   }
@@ -1099,7 +1105,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 796;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
