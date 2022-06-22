@@ -1,0 +1,17 @@
+.mobile-menu-conteiner {
+  background-color: aqua;
+  text-align: center;
+  padding: 20px;
+
+  &:is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}

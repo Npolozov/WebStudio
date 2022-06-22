@@ -1,0 +1,56 @@
+.field {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.icon-checkbox {
+  margin-right: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $textTitleColor;
+  border-radius: 4px;
+
+  .checkbox:checked + & {
+    border-color: transparent;
+    background-color: $buttonColor;
+    background-image: url(../images/icons.svg/icon\ check.svg);
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+  }
+
+  .checkbox:focus + & {
+    border-color: $buttonColor;
+  }
+
+  .checkbox:checked:focus + & {
+    background-image: url(../images/icons.svg/icon\ check.svg);
+  }
+}
+
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.link-checkbox {
+  color: $buttonColor;
+}

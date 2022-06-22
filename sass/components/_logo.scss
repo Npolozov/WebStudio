@@ -1,0 +1,28 @@
+.logo {
+  display: block;
+  color: $textTitleColor;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+}
+
+.header-logo {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.logo-accent {
+  color: $buttonColor;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.footer-logo-accent {
+  color: $textBottonColor;
+}

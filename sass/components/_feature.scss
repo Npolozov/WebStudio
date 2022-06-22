@@ -1,0 +1,42 @@
+.feature__list {
+  @extend %list;
+}
+
+.feature__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-conteiner {
+  background: #f5f4fa;
+  border-radius: 4px;
+  min-width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-conteiner__icon {
+  align-items: center;
+}
+
+.feature-conteiner__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $textTitleColor;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-conteiner__paragraf {
+  min-width: 450px;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 0;
+}

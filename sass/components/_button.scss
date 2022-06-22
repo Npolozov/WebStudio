@@ -1,0 +1,88 @@
+.button {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  color: $textBottonColor;
+  background-color: $buttonColor;
+  border-radius: 4px;
+  border: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  @extend %list;
+}
+.buttons-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-portfolio {
+  font-weight: 500;
+  padding: 6px 22px;
+  color: $textTitleColor;
+  background-color: #f5f4fa;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $textBottonColor;
+    background-color: $buttonColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button-mobal {
+  position: absolute;
+  top: 22;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-mobal .icon-close {
+  display: none;
+}
+
+.button-mobal.is-open .icon-close {
+  display: block;
+}
+
+.button-mobal.is-open .icon-menu {
+  display: none;
+}
