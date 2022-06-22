@@ -23,6 +23,18 @@
           <a href="./index.html" class="logo header-logo"
             ><span class="logo-accent">Web</span>Studio</a
           >
+          <button
+            type="button"
+            class="button-mobal-open js-open-menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg width="40" height="40">
+              <use
+                href="./images/icons.svg/mobal-menu.svg#icon-menu_40px-1"
+              ></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link curent">Студия</a>
@@ -480,39 +492,43 @@
         </form>
       </div>
     </footer>
-    <div class="mobile-menu-conteiner is-open" id="menu-mobile">
-      <div class="navigator">
-        <ul class="site-nav">
-          <li class="site-nav__item">
-            <a href="./index.html" class="site-nav__link curent">Студия</a>
+    <div
+      class="mobile-menu-conteiner js-menu-container is-open"
+      id="mobile-menu"
+    >
+      <button type="button" class="button-mobal-close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg/mobal-menu.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobal-site-nav">
+          <li class="mobal-site-nav__item">
+            <a href="./index.html" class="mobal-site-nav__link curent"
+              >Студия</a
+            >
           </li>
-          <li class="site-nav__item">
-            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+          <li class="mobal-site-nav__item">
+            <a href="./portfolio.html" class="mobal-site-nav__link"
+              >Портфолио</a
+            >
           </li>
-          <li class="site-nav__item">
-            <a href="" class="site-nav__link">Контакты</a>
+          <li class="mobal-site-nav__item">
+            <a href="" class="mobal-site-nav__link">Контакты</a>
           </li>
         </ul>
       </div>
       <div class="contact">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a href="tomail:info@devstudio.com" class="contact__link">
-              <svg class="contact__icon" width="16" height="12">
-                <use
-                  href="./images/icons.svg/header.svg#icon-envelope-hover"
-                ></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__link tel">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg/header.svg#icon-Vector-2"></use>
-              </svg>
+        <ul class="mobal-contact__list">
+          <li class="mobal-contact__item">
+            <a href="tel:+380961111111" class="mobal-contact__link tel">
               +38 096 111 11 11</a
             >
+          </li>
+          <li class="mobal-contact__item">
+            <a href="tomail:info@devstudio.com" class="mobal-contact__link">
+              info@devstudio.com
+            </a>
           </li>
         </ul>
       </div>

@@ -2,44 +2,108 @@
   background-color: white;
   text-align: center;
   padding: 20px;
-
-  @media screen and (max-width: 767px) {
-    // position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    &:is-open {
-      display: block;
-    }
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 480px;
+  height: 796px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-mobal {
-  //   position: absolute;
-  //   top: 22;
-  //   right: 16px;
+.mobile-menu-conteiner.is-open {
+  transform: translateX(0);
+}
+.button-mobal-open {
   border: none;
   background-color: transparent;
   margin: 0;
   padding: 0;
+
+  &:hover,
+  &:focus {
+    fill: $buttonColor;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-mobal-close {
+  position: absolute;
+  top: 22;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    fill: $buttonColor;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.button-mobal .icon-close {
-  display: none;
+.mobal-site-nav {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 302px;
 }
 
-// .button-mobal.is-open .icon-close {
-//   display: block;
-// }
+.mobal-site-nav__item:not(:last-child) {
+  margin-bottom: 36px;
+}
 
-// .button-mobal.is-open .icon-menu {
-//   display: none;
-// }
+.mobal-site-nav__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $textTitleColor;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $buttonColor;
+  }
+  &.curent {
+    color: $buttonColor;
+  }
+}
+
+.mobal-contact__list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 64px;
+}
+
+.mobal-contact__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobal-contact__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $primaryTextColor;
+}
+
+.mobal-contact__link.tel {
+  font-size: 34px;
+}
 
 .modal-soc__list {
   display: flex;

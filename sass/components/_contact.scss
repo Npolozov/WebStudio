@@ -3,6 +3,10 @@
   margin-left: auto;
   align-items: center;
   @extend %list;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .contact__item:not(:last-child) {
   margin-right: 50px;
