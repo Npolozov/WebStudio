@@ -8,6 +8,9 @@
   opacity: 1;
   transform: scale(1);
   transition: transform 250ms linear, opacity 250ms linear;
+
+  overflow: scroll;
+  padding: 93px 15px;
 }
 
 .backdrop.is-hidden {

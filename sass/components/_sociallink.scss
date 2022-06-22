@@ -1,13 +1,13 @@
 .social__list {
   display: flex;
-  margin-bottom: 30px;
+  align-items: center;
   justify-content: center;
   @extend %list;
+  margin-bottom: 24px;
 }
 
 .social__item:not(:last-child) {
   margin-right: 10px;
-  margin-bottom: 24px;
 }
 
 .social__link {
