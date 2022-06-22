@@ -584,7 +584,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .social__item:not(:last-child) {
@@ -616,6 +616,10 @@ header {
 
 .social__logo {
   fill: currentColor;
+}
+
+.social__list--footer {
+  padding: 0;
 }
 
 .social__item--margin:not(:last-child) {
