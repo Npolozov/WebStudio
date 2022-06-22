@@ -1,15 +1,12 @@
 .company__list {
   display: flex;
   @extend %list;
-
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .company__item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }

@@ -58,6 +58,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .button {
@@ -751,8 +753,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: 796px;
+  width: 100%;
+  height: auto;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);

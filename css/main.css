@@ -58,6 +58,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .button {
@@ -696,16 +698,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (min-width: 480px) {
-  .company__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .company__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
@@ -738,10 +736,6 @@ body {
 
 .company__icon {
   fill: currentColor;
-}
-
-.feature__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .feature-conteiner {
@@ -789,8 +783,6 @@ body {
 
 .hero {
   text-align: center;
-  max-width: 1600;
-  height: 480;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero.jpg);
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero.jpg);
   background-repeat: no-repeat;
@@ -801,8 +793,8 @@ body {
 
 .hero_title {
   margin: 0 auto;
-  width: 360px;
   font-size: 24px;
+  max-width: 360px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1106,8 +1098,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: 796px;
+  width: 100%;
+  height: auto;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
