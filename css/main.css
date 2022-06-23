@@ -1111,7 +1111,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 796px;
+  height: 100%;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1170,7 +1170,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 300px;
+  margin-bottom: 302px;
 }
 
 .mobal-site-nav__item:not(:last-child) {
