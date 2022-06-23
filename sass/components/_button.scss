@@ -34,11 +34,19 @@
 
 .buttons-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   @extend %list;
 }
+
+.buttons-list__item:nth-child(-n + 3) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
 .buttons-list__item:not(:last-child) {
   margin-right: 8px;
 }

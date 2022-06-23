@@ -12,6 +12,11 @@
 .header-logo {
   margin-top: 16px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
 }
 .logo-accent {
   color: $buttonColor;
