@@ -11,7 +11,7 @@
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 100%;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -745,6 +745,13 @@ body {
     margin: 15px;
   }
 }
+@media screen and (min-width: 767px) {
+  .company__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
 
 .company__link {
   display: -webkit-box;
@@ -925,8 +932,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 4);
-        flex-basis: calc((100% - 60px) / 4);
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
