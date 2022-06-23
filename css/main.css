@@ -1254,12 +1254,16 @@ body {
   padding: 0;
 }
 .button-mobal-open:hover, .button-mobal-open:focus {
-  fill: #2196f3;
+  color: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .button-mobal-open {
     display: none;
   }
+}
+
+.icon-mobal-open {
+  fill: currentColor;
 }
 
 .button-mobal-close {
@@ -1272,12 +1276,16 @@ body {
   padding: 0;
 }
 .button-mobal-close:hover, .button-mobal-close:focus {
-  fill: #2196f3;
+  color: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .button-mobal-close {
     display: none;
   }
+}
+
+.icon-mobal-close {
+  fill: currentColor;
 }
 
 .mobal-site-nav {
@@ -1340,6 +1348,9 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
+}
+.mobal-contact__link:hover, .mobal-contact__link:focus {
+  color: #2196f3;
 }
 
 .mobal-contact__link.tel {

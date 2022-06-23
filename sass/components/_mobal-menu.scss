@@ -23,11 +23,15 @@
 
   &:hover,
   &:focus {
-    fill: $buttonColor;
+    color: $buttonColor;
   }
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.icon-mobal-open {
+  fill: currentColor;
 }
 
 .button-mobal-close {
@@ -41,12 +45,16 @@
 
   &:hover,
   &:focus {
-    fill: $buttonColor;
+    color: $buttonColor;
   }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.icon-mobal-close {
+  fill: currentColor;
 }
 
 .mobal-site-nav {
@@ -99,6 +107,11 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $primaryTextColor;
+
+  &:hover,
+  &:focus {
+    color: $buttonColor;
+  }
 }
 
 .mobal-contact__link.tel {
