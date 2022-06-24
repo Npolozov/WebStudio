@@ -21,8 +21,7 @@
   margin: 0;
   padding: 0;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $buttonColor;
   }
   @media screen and (min-width: 768px) {
@@ -43,8 +42,7 @@
   margin: 0;
   padding: 0;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $buttonColor;
   }
 

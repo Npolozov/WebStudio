@@ -766,7 +766,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  min-width: 320px;
 }
 
 @media screen and (min-width: 768px) {
@@ -925,7 +924,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.button-mobal-open:hover, .button-mobal-open:focus {
+.button-mobal-open:hover {
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
@@ -947,7 +946,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.button-mobal-close:hover, .button-mobal-close:focus {
+.button-mobal-close:hover {
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
