@@ -35,10 +35,13 @@
 .buttons-list {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   margin-top: 0;
   margin-bottom: 40px;
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .buttons-list__item:nth-child(-n + 3) {
