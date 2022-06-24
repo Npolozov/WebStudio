@@ -1162,6 +1162,9 @@ body {
 }
 
 .modal-icon-close {
+  position: absolute;
+  top: 3px;
+  right: 4.5px;
   fill: currentColor;
 }
 
