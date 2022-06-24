@@ -946,7 +946,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.button-mobal-close:hover {
+.button-mobal-close:focus {
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
@@ -986,7 +986,7 @@ body {
   color: #212121;
   text-decoration: none;
 }
-.mobal-site-nav__link:hover, .mobal-site-nav__link:focus {
+.mobal-site-nav__link:focus {
   color: #2196f3;
 }
 
