@@ -42,7 +42,7 @@
   margin: 0;
   padding: 0;
 
-  &:hover {
+  &:focus {
     color: $buttonColor;
   }
 
@@ -76,7 +76,6 @@
   color: $textTitleColor;
   text-decoration: none;
 
-  &:hover,
   &:focus {
     color: $buttonColor;
   }
