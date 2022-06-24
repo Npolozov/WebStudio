@@ -15,10 +15,22 @@
     margin-top: 21px;
     margin-bottom: 21px;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .contact__item:not(:last-child) {
-  margin-bottom: 10px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 
 // .contact__item:not(:last-child) {
