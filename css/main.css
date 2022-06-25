@@ -1379,11 +1379,7 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (max-width: 767px) {
-  .mobile-menu-conteiner {
-    overflow: scroll;
-  }
+  overflow: scroll;
 }
 
 .mobile-menu-conteiner.is-open {
