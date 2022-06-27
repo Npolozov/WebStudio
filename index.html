@@ -147,19 +147,43 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="about__list list">
             <li class="about__item">
-              <img src="./images/img1.jpg" alt="комп" width="370" />
+              <img
+                srcset="
+                  ./images/about/imgpicture1.jpg    370w,
+                  ./images/about/imgpicture1@2x.jpg 740w
+                "
+                sizes="370px"
+                src="./images/about/imgpicture1.jpg"
+                alt="Описание изображения для всех версий"
+              />
               <div class="photo-text">
                 <p class="photo-paragraf">Десктопные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img src="./images/img2.jpg" alt="телефон" width="370" />
+              <img
+                srcset="
+                  ./images/about/imgpicture2.jpg    370w,
+                  ./images/about/imgpicture2@2x.jpg 740w
+                "
+                sizes="370px"
+                src="./images/about/imgpicture2.jpg"
+                alt="Описание изображения для всех версий"
+              />
               <div class="photo-text">
                 <p class="photo-paragraf">Мобильные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img src="./images/img3.jpg" alt="планшет" width="370" />
+              <img
+                srcset="
+                  ./images/about/imgpicture3.jpg    370w,
+                  ./images/about/imgpicture3@2x.jpg 740w
+                "
+                sizes="370px"
+                src="./images/about/imgpicture3.jpg"
+                alt="Описание изображения для всех версий"
+              />
               <div class="photo-text">
                 <p class="photo-paragraf">Дизайнерские решения</p>
               </div>
@@ -253,11 +277,11 @@
                 <source
                   srcset="
                     ./images/team2/img-comp-team2.jpg    1x,
-                    ./images/team2/img-comp-team2@2x.jpg 2x
+                    ./images/team2/img-comp-team2@x2.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
-                <img src="./images/team2/img-tab-team2.jpg" alt="сотрдник1" />
+                <img src="./images/team2/img-tab-team2.jpg" alt="сотрдник2" />
               </picture>
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__profession">Frontend Developer</p>
@@ -319,7 +343,7 @@
                   "
                   media="(min-width: 1200px)"
                 />
-                <img src="./images/team3/img-tab-team3.jpg" alt="сотрдник1" />
+                <img src="./images/team3/img-tab-team3.jpg" alt="сотрдник3" />
               </picture>
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__profession">Marketing</p>
@@ -381,7 +405,7 @@
                   "
                   media="(min-width: 1200px)"
                 />
-                <img src="./images/team4/imgtab-team4.jpg" alt="сотрдник1" />
+                <img src="./images/team4/imgtab-team4.jpg" alt="сотрдник4" />
               </picture>
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__profession">UI Designer</p>
