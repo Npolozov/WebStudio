@@ -29,9 +29,6 @@
 }
 
 .list-projects__link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   text-decoration: none;
   &:hover,
   &:focus {
