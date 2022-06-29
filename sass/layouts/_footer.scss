@@ -69,6 +69,10 @@
   color: $textBottonColor;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .form {

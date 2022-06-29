@@ -31,12 +31,6 @@
   }
 }
 
-.modal-soc__list, .mobal-contact__list, .mobal-site-nav, .team__list, .feature__list, .company__list, .about__list, .social__list, .contact-footer, .site-nav, .contact__list, .buttons-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -58,6 +52,12 @@ h4,
 h5,
 h6,
 p {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-soc__list, .mobal-contact__list, .mobal-site-nav, .team__list, .feature__list, .company__list, .about__list, .social__list, .contact-footer, .site-nav, .contact__list, .buttons-list {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -433,6 +433,11 @@ header {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .connect__title {
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .form {
@@ -710,6 +715,18 @@ header {
           justify-content: center;
   padding-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .social__list {
+    padding-bottom: 0;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social__list {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+}
 
 .social__item:not(:last-child) {
   margin-right: 10px;
@@ -869,7 +886,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #afb1b8;
-  border: 1px solid #757575;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 100%;
   height: 92px;
@@ -944,6 +961,11 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .feature-conteiner__title {
+    text-align: left;
+  }
 }
 
 .feature-conteiner__paragraf {

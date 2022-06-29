@@ -4,6 +4,16 @@
   justify-content: center;
   @extend %list;
   padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .social__item:not(:last-child) {
