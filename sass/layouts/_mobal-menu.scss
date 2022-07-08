@@ -81,7 +81,12 @@
   text-decoration: none;
   cursor: pointer;
 
-  &:focus &:focus {
+  &:hover,
+  &:focus {
+    color: $buttonColor;
+  }
+
+  &.curent {
     color: $buttonColor;
   }
 }

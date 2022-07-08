@@ -1006,7 +1006,10 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
-.mobal-site-nav__link:focus .mobal-site-nav__link:focus {
+.mobal-site-nav__link:hover, .mobal-site-nav__link:focus {
+  color: #2196f3;
+}
+.mobal-site-nav__link.curent {
   color: #2196f3;
 }
 
