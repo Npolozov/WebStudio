@@ -13,6 +13,8 @@
 }
 
 .list-projects__item {
+  flex-grow: 1;
+  height: 100%;
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -36,7 +38,7 @@
 .list-projects__link {
   display: flex;
   flex-direction: column;
-  height: 100%;
+ 
   text-decoration: none;
   &:hover,
   &:focus {
@@ -134,7 +136,7 @@
 }
 
 .tab-flex-grow {
-  flex-grow: 1;
+  
 }
 
 .project__title {
