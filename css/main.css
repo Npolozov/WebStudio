@@ -1045,6 +1045,7 @@ header {
   transition: opacity 250ms linear, -webkit-transform 250ms linear;
   transition: transform 250ms linear, opacity 250ms linear;
   transition: transform 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
