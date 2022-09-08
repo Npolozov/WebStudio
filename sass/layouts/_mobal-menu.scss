@@ -22,7 +22,7 @@
 }
 
 .mobile-menu-conteiner.is-open {
-  transform: translateX(0);
+  transform: translateX(10px);
 }
 .button-mobal-open {
   border: none;
@@ -153,4 +153,14 @@
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
