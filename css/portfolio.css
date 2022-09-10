@@ -863,8 +863,8 @@ header {
 }
 
 .mobile-menu-conteiner.is-open {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .button-mobal-open {

@@ -1,5 +1,5 @@
-const btnOff = document.querySelector(".scroll-off"),
-  btnOn = document.querySelector(".scroll-on"),
+const btnOff = document.querySelector(".js-scroll-off"),
+  btnOn = document.querySelector(".js-scroll-on"),
   body = document.body;
 
 let disableScroll = function () {
