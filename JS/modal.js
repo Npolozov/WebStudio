@@ -1,4 +1,4 @@
-(() => {
+
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
@@ -26,7 +26,6 @@
   }
 
   function keyBoardPress(event) {
-    console.log(event.key);
     if (event.key === "Escape") {
       closeBtnClick();
     }
@@ -35,7 +34,6 @@
   refs.openModalBtn.addEventListener("click", openBtnClick);
   refs.closeModalBtn.addEventListener("click", closeBtnClick);
   refs.modal.addEventListener("click", onBackdropClick);
-})();
 
 // const refs = {
 //   openModalBtn: document.querySelector("[data-modal-open]"),

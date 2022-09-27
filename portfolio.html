@@ -24,10 +24,11 @@
             ><span class="logo-accent">Web</span>Studio</a
           >
           <button
-            type="button"
-            class="button-mobal-open js-open-menu"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
+          type="button"
+          class="button-mobal-open js-scroll-off"
+          data-menu-button
+          aria-controls="mobile-menu"
+          aria-expanded="false"
           >
             <svg width="40" height="40">
               <use
@@ -567,8 +568,13 @@
         </form>
       </div>
     </footer>
-    <div class="mobile-menu-conteiner js-menu-container" id="mobile-menu">
-      <button type="button" class="button-mobal-close js-close-menu">
+<!-- ----------------------------------Mobile Menu------------------------------ -->
+<div class="mobile-menu-conteiner" data-menu id="mobile-menu">
+  <button
+  type="button"
+  class="button-mobal-close js-scroll-on"
+  data-menu-button
+>
         <svg width="40" height="40" class="icon-mobal-close">
           <use href="./images/icons.svg/mobal-menu.svg#icon-close_40px"></use>
         </svg>
@@ -617,7 +623,8 @@
         </ul>
       </div>
     </div>
+    <script src="./JS/modal.js"></script>
     <script src="./JS/mobile-menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
+    <script src="./JS/scroll.js"></script>
   </body>
 </html>
