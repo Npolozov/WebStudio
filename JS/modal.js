@@ -3,6 +3,7 @@
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-modal]"),
+    lockBody: document.querySelector("body"),
   };
 
   function toggleModal() {
@@ -12,16 +13,18 @@
   const openBtnClick = () => {
     toggleModal();
     document.addEventListener("keydown", keyBoardPress);
+    refs.lockBody.classList.toggle("lock");
   };
 
   const closeBtnClick = () => {
     toggleModal();
     document.removeEventListener("keydown", keyBoardPress);
+    refs.lockBody.classList.toggle("lock");
   };
 
   function onBackdropClick(event) {
     if (event.currentTarget === event.target) {
-      toggleModal();
+      closeBtnClick();
     }
   }
 
