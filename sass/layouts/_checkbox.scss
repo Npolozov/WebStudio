@@ -36,7 +36,7 @@
     background-repeat: no-repeat;
   }
 
-  .checkbox:focus + & {
+  .checkbox:hover + & {
     border-color: $buttonColor;
   }
 

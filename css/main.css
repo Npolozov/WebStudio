@@ -1283,7 +1283,7 @@ body.lock {
   background-origin: border-box;
   background-repeat: no-repeat;
 }
-.checkbox:focus + .icon-checkbox {
+.checkbox:hover + .icon-checkbox {
   border-color: #2196f3;
 }
 .checkbox:checked:focus + .icon-checkbox {
