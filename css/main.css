@@ -1064,10 +1064,6 @@ header {
   overflow-x: hidden;
   overflow-y: auto;
   opacity: 1;
-  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
-  transition: opacity 250ms linear, -webkit-transform 250ms linear;
-  transition: transform 250ms linear, opacity 250ms linear;
-  transition: transform 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
 }
 @media screen and (min-width: 768px) {
   .modal {
